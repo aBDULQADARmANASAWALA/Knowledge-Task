@@ -4,8 +4,8 @@ const issueSchema = new mongoose.Schema(
     {
         title: { type: String, required: true },
         desc: { type: String, required: true },
-        priority: { type: String, enum: ['Low', 'Medium', 'High'], required: true },
-        status: { type: String, enum: ['Open', 'In Progress', 'Closed'], required: true },
+        priority: { type: String, enum: ['low', 'medium', 'high'], required: true },
+        status: { type: String, enum: ['open', 'in-progress', 'closed'], required: true },
     },
 
     { timestamps: true }
